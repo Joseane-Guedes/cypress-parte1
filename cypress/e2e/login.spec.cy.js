@@ -2,7 +2,7 @@
 
 context('Funcionalidade login', () => {
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        cy.visit('minha-conta/')
     });
 
     after(() => {

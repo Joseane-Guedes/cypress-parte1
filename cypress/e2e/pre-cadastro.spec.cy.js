@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 
 describe('Funcionalidade pré-cadastro', () => {
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        cy.visit('minha-conta/')
     });
     it('Deve completar o pré-cadastro com sucesso', () => {
         let nomeFaker = faker.person.firstName()
