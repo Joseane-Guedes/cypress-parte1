@@ -30,11 +30,11 @@ describe('Funcionalidade página de produtos', () => {
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
     });
 
-    it.only('Deve adicionar produtos no carrinho - Usando Comando customizado', () => {
+    it('Deve adicionar produtos no carrinho - Usando Comando customizado', () => {
         cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black', 2)
     });
 
-    it.only('Deve adicionar produtos no carrinho - Usando Comando customizado', () => {
+    it('Deve adicionar produtos no carrinho - Usando Comando customizado', () => {
         cy.addProdutos('Abominable Hoodie', 'M', 'Red', 3)
     });
 });
