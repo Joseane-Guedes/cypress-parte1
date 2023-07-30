@@ -14,7 +14,7 @@ class EnderecoPage {
         cy.get('#billing_phone').clear().type(telefone)
         cy.get('#billing_email').clear().type(email)
         cy.get(':nth-child(2) > .button').click()
-        // cy.get('.button').click()
+        // cy.contains('.button', 'Salvar endereços').click()
 
     }
     editarEnderecoEntrega() {
