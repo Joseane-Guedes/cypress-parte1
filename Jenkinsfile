@@ -5,7 +5,7 @@ pipeline {
         stage('Clonar repositório') {
             steps {
                 git branch: 'main', url: 'https://github.com/Joseane-Guedes/cypress-parte1.git' 
-                'npm install -f'
+                'npm install'
             }
         }
         // stage('Instalar dependências') {
