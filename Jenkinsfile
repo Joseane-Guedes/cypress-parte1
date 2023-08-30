@@ -1,10 +1,6 @@
 pipeline {
     agent any
-
-    environment {
-        PATH = "${tool 'nodejs'}/bin:${env.PATH}"
-    }
-
+    
     stages {
         stage('Clonar repositório') {
             steps {
