@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    environment {
+        NODEJS_HOME = tool name: 'Node18', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+        PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
+    }
+
     stages {
         stage('Clonar repositório') {
             steps {
