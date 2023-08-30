@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+     environment {
+        PATH = "/Users/joseane/.nvm/versions/node/v18.0.0/bin:$PATH"
+    }
+
     stages {
         stage('Clonar repositório') {
             steps {
